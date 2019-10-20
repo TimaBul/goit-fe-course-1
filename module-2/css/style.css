@@ -22,16 +22,13 @@ input[type="radio"].visually-hidden{
 }
 .site-navigation{
     padding: 0px;
-    margin: 0px auto;
-    margin-top: 75px;
+    margin: 75px auto 105px;
     list-style: none;
     display: inline-block;
-    margin-bottom: 105px;
 }
 .site-navigation li{
     display: inline-block;
     margin-right: 123px;
-    /* margin-top: 80px; */
 }
 .site-navigation li:nth-child(4){
     margin-right: 0px;
@@ -45,18 +42,15 @@ input[type="radio"].visually-hidden{
     color: #03a9f4;
 }
 .wrapper {
-    /* text-align: left; */
     display: inline-block;
     width: 900px;
 }
 .content-block{
-    margin: 0px auto;
+    margin: 0px 60px 135px 0px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
     width: 420px;
-    margin-bottom: 135px;
-    margin-right: 60px;
 }
 .wrapper .content-block:nth-child(even){
     margin-right: 0px;
@@ -68,11 +62,12 @@ input[type="radio"].visually-hidden{
     margin-bottom:60px;
 }
 .content-type{
-    margin: 0px; /* Не накладывался мargin текста на margin ищображения */
+    margin-top: 0px; /* Не накладывался мargin текста на margin ищображения */
     margin-bottom: 30px;
     line-height: 17px;
     color: #b4ad9e;
     font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
 }
 .content-name{
     margin-bottom: 40px;
@@ -86,7 +81,10 @@ input[type="radio"].visually-hidden{
     width: 164px;
     height: 60px;
     color: #626262;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0)
-
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Playfair Display', 'MyriadPro', serif;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 70px;
+    /* Для кнопки пришлось прописывать все стили заново:( */
 }
