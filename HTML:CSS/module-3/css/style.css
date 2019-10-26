@@ -130,7 +130,7 @@ li:hover .price{
     background-color: #323232;
     line-height: 40px;
     padding-left: 12px;
-    margin-top: -5px; /* deleted unkown margin between image and name of product */
+    margin-top: -4px; /* deleted unkown margin between image and name of product */
 }
 .price{
     float: right;
@@ -139,7 +139,7 @@ li:hover .price{
     background-color: #8c8c8c;
     line-height: 40px;
     text-align: center;
-    margin-top: -5px; /* deleted unkown margin between image and price ofn product */
+    margin-top: -4px; /* deleted unkown margin between image and price ofn product */
 }
 .fp{
     text-align: center;
