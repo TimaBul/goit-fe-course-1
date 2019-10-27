@@ -118,28 +118,32 @@ header{
 .product-list li:nth-child(-n+4){
     margin-bottom: 30px;
 }
-li:hover .title{
+/* li:hover .title{
     background-color: #1abc9c;
 }
 li:hover .price{
     background-color: #7fd9c7;
+} */
+.tested{
+    background-color: #323232;
+    margin-top: -5px; /* deleted unkown margin between image and name of product */
+}
+li:hover .tested{
+    background-color:#7fd9c7;
 }
 .title {
     color: #ffffff;
     width: 200px;
-    background-color: #323232;
     line-height: 40px;
     padding-left: 12px;
-    margin-top: -4px; /* deleted unkown margin between image and name of product */
 }
 .price{
     float: right;
     color: #ffffff;
     width: 55px;
-    background-color: #8c8c8c;
+    background-color: rgba(255, 255, 255, 0.44);
     line-height: 40px;
     text-align: center;
-    margin-top: -4px; /* deleted unkown margin between image and price ofn product */
 }
 .fp{
     text-align: center;
