@@ -103,14 +103,12 @@ header{
 .product-image{
     margin: 0px;
     padding: 0px;
-    width: 255px;
-    height: 282px;
     background-color: #e9f0fd;
 }
 .product-list li{
     float: left;
     width: 255px;
-    height: 322px;
+    /* height: 322px; */
 }
 .product-list li:not(:nth-child(4n)){
     margin-right: 30px;
@@ -169,8 +167,6 @@ li:hover .tested{
     float: left;
 }
 .news img{
-    width: 350px;
-    height: 262px;
     margin-bottom: 15px;
 }
 .news h3{
@@ -191,7 +187,7 @@ li:hover .tested{
     font-size: 14px;
     margin-bottom: 15px;
 }
-.news button{
+/* .news button{
     width: 160px;
     height: 50px;
     font-family: "Open Sans", serif;
@@ -202,6 +198,24 @@ li:hover .tested{
     background-color: #1abc9c;
     border-radius: 4px;
     margin-bottom: 80px;
+} */
+.button{
+    width: 160px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 80px;
+    background-color: #1abc9c;
+    text-align: center;
+}
+.button a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Open Sans", serif;
+    color:#ffffff;
+    line-height: 46px;
+    font-weight: 300;
+    font-size: 16px;
+    
 }
 .latest-news{
     width: 1110px;
