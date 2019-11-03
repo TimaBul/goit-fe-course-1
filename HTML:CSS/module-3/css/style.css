@@ -113,7 +113,7 @@ header{
     width: 255px;
     margin-bottom: 30px;
 }
-.product-list li:hover .name_price{
+.product-list li:hover .product-name{
     background-color: #1abc9c;
 }
 .product-list li:not(:nth-child(4n)){
@@ -125,7 +125,7 @@ header{
 .product-list-div{
     background-color: #e9f0fd;
 }
-.name_price {
+.product-name {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -134,7 +134,7 @@ header{
     line-height: 40px;
 }
 
-.name_price h3 {
+.product-name h3 {
     float: left;
     padding-left: 13px;
 }
