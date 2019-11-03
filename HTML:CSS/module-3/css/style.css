@@ -87,7 +87,7 @@ header{
     margin: 0 auto;
 }
 .product-list-div a{
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 .product-list{
@@ -109,8 +109,12 @@ header{
 }
 .product-list li{
     float: left;
+    vertical-align: top;
     width: 255px;
-    /* height: 322px; */
+    margin-bottom: 30px;
+}
+.product-list li:hover .name_price{
+    background-color: #1abc9c;
 }
 .product-list li:not(:nth-child(4n)){
     margin-right: 30px;
@@ -118,32 +122,37 @@ header{
 .product-list li:nth-child(-n+4){
     margin-bottom: 30px;
 }
+.product-list-div{
+    background-color: #e9f0fd;
+}
+.name_price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background: rgb(50, 50, 50);
+    text-transform: uppercase;
+    line-height: 40px;
+}
 
-.tested{
-    display: block;
-    background-color: #323232;
-    /* margin-top: -5px;  */
-    /* deleted unkown margin between image and name of product */
+.name_price h3 {
+    float: left;
+    padding-left: 13px;
 }
-li:hover .tested{
-    background-color:#7fd9c7;
+
+.product-list-div h3 > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
-.title {
-    display: block;
-    color: #ffffff;
-    width: 200px;
-    line-height: 40px;
-    padding-left: 12px;
-}
-.price{
-    display: block;
+
+.product-list-div span {
     float: right;
-    color: #ffffff;
-    width: 55px;
-    background-color: rgba(255, 255, 255, 0.44);
-    line-height: 40px;
+    width: 54px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.439);
     text-align: center;
+    padding-bottom: 1px;
 }
+
 .fp{
     text-align: center;
     font-family: "Roboto", "Myriad Pro", sans-serif;

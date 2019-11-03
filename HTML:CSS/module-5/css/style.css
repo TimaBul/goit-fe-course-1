@@ -72,37 +72,33 @@ header{
 .site-navigation a:hover{
     color: #1abc9c;
 }
-.slider{
-    position: relative;
-    background-image: url(/img/image-1.jpg);
-    background-size: cover;
-    background-position: center center;
-    min-height: 600px;
+.slider-body img{
+    filter:brightness(0.522)
 }
 .slider-body{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 250px 0;
+    width: 1100px;
+    position: relative;ы
 }
-.arrow {
-    width: 105px;
-    height: 105px;
-    background-color: #1abc9c;
-    opacity: 0.75;
-    float: left;
-  }
-  .arrow-right {
-    float: right;
-  }
-  
-  .title {
-    float: left;
-  }
-  
-  .arrow > span {
-    vertical-align: middle;
-    text-align: center;
-    margin: 0 auto;
-    width: 15px;
-    height: 15px;
-  }
+.slider h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    text-transform: uppercase;
+    line-height: 82px;
+    white-space: pre-line ;
+}
+.slider h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: red;
+    text-transform: uppercase;
+    line-height: 54px;
+}
+.slider-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
