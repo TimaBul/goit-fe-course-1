@@ -1,7 +1,21 @@
-body{
-    margin: 0;
-    padding: 0;
+html{
     box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px;
+}
+h3{
+    padding: 0px;
+    margin: 0px;
+}
+*, 
+*::before,
+*::after{
+    box-sizing: inherit;
 }
 
 .visually-hidden:not(focus):not(:active),
@@ -68,12 +82,16 @@ header{
 .site-navigation a:hover{
     color: #1abc9c;
 }
+.slider{
+    margin-bottom: 100px;
+    text-align: center;
+}
 .slider-body{
     position: relative;
 }
 .slider-body img{
     display: block;
-    text-align: center;
+    margin:0 auto;
     filter: brightness(0.522)
 }
 .slider-name{
@@ -90,7 +108,7 @@ header{
     font-weight: 900;
     color: #ffffff;
     text-transform: uppercase;
-    /* line-height: 54px; */
+    line-height: 82px;
 }
 .slider-name h3 {
     font-family: 'Roboto', sans-serif;
@@ -98,17 +116,21 @@ header{
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
-    /* line-height: 54px; */
     margin: 0;
 }
 .slider-body button{
     border: 0;
     background-color: #4ec6ab;
-    opacity: 62%;
+    opacity: 65%;
     width: 105px;
     height: 105px;
 }
+.slider-body button:hover{
+    opacity:  1;
+}
 .tested{
+    text-align: left;
+    width: 770px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -117,11 +139,182 @@ header{
 .slider-body .left{
     position: absolute;
     left: 0;
+    color: #ffffff;
+    font-size: 100px;
 }
 .slider-body .right{
     position: absolute;
     right: 0;
+    color: #ffffff;
+    font-size: 100px;
 }
-.new-collection{
+main{
+background-color:#e9f0fd;
+}
+.products{
+    width: 1110px;
+    margin: 0 auto;
+}
+.product-list-div a{
+    text-decoration: none;
+}
+.product-list{
+    list-style: none;
+    font-family: "Roboto", "Myriad Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+}
+.product-image{
+    margin: 0px;
+    padding: 0px;
     background-color: #e9f0fd;
+}
+.product-list-div img{
+    display: block;
+}
+.product-list li{
+    float: left;
+    vertical-align: top;
+    width: 255px;
+    margin-bottom: 30px;
+}
+.product-list li:hover .product-name{
+    background-color: #1abc9c;
+}
+.product-list li:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+.product-list li:nth-child(-n+4){
+    margin-bottom: 30px;
+}
+.product-list-div{
+    background-color: #e9f0fd;
+    position: relative;
+}
+.product-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background: rgb(50, 50, 50);
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.product-name h3 {
+    float: left;
+    padding-left: 13px;
+}
+
+.product-list-div h3 > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.product-list-div span {
+    float: right;
+    width: 54px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.439);
+    text-align: center;
+    padding-bottom: 1px;
+}
+.buttons{
+    width: 200px;
+    
+}
+.overlay button{
+    float: left;
+    font-size: 30px;
+    background: none;
+    color: #ffffff;
+    border: 1px solid;
+    margin-right: 9px;
+    margin-bottom: 7px;
+}
+.overlay button span{
+    padding: 9px;
+    background: none;
+}
+.overlay{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    width: 235px;
+    height: 262px;
+    background-color: rgba(0, 0, 0, .549);
+}
+.buttons{
+    position: inherit;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.overlay  .buttons .cart{
+    border: none;
+    width: 186px;
+    padding: 9px;
+    background-color: #323232;
+}
+.cart .add-to-cart{
+    padding: 0;
+    width: 62%;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.cart .pe-7s-cart{
+    padding: 0;
+    float: left;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.fp{
+    text-align: center;
+    font-family: "Roboto", "Myriad Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 40px;
+    padding-bottom: 90px;
+}
+.fp::after{
+    margin: 30px auto 0;
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+}
+footer{
+    text-align: center;
+    height: 88px;
+    background-color: #323232;
+}
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fefefe;
+    background-color: #323232;
+    padding: 33px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #1abc9c;
+}
+.buttons button:hover{
+    background-color:  #1abc9c;
+}
+.buttons .cart:hover{
+    background-color:  #1abc9c;
 }
